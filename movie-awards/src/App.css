@@ -1,0 +1,39 @@
+header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-size: 4em;
+  color: #fff;
+  margin: 50px 0;
+}
+
+header input {
+  width: 80%;
+  height: 50px;
+  font-size: 2em;
+  border: black 1px solid;
+  -webkit-box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 20px #000;
+}
+
+#movieList {
+  border: yellow 1px solid;
+  height: 370px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#awards {
+  border: green 1px solid;
+  height: 170px;
+  margin: 20px 0;
+}
+
+footer {
+  height: 88px;
+  border: blue 1px solid;
+
+}
