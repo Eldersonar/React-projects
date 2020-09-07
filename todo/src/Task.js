@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function task({ task, toggleTasks }) {
+export default function Task({ task, toggleTasks }) {
 
     function handleTaskClick() {
         toggleTasks(task.id)
