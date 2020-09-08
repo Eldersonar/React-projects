@@ -20,11 +20,21 @@ export default class Movies extends React.Component {
 
     render() {
         if (this.state.loading) {
-            return <div>loading...</div>;
+            // return <div>loading...</div>;
+            return (
+                <div className="movieHolder">
+                    <div className="imgHolder">
+                    </div>
+                    <div className="movieInfo">
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            )
         }
 
         if (!this.state.movies) {
-            return <div>didn't get movies</div>;
+            return <div>Couldn't get movies</div>;
         }
 
         return (
