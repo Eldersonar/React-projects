@@ -9,15 +9,23 @@ export default class Awards extends React.Component {
         this.LOCAL_STORAGE_KEY = 'awardsApp.movies'
 
         this.state = { movies: localStorage.getItem(this.LOCAL_STORAGE_KEY) };
-        this.movies = JSON.parse(this.state.movies)
+        this.movies = props.movies
+
+        console.log('=================')
+        console.log(this.movies)
 
         console.log(this.props)
     }
 
     render() {
-        console.log(this.movies.length)
         console.log(this.movies)
         if (this.movies) {
+            if (this.movies.length == 5)
+                return (
+                    <div id="awardsText">
+                        there are 5 movies
+                    </div >
+                )
             return (
                 <>
                     <h1 id="awardLabel">AWARDS</h1>
@@ -38,13 +46,6 @@ export default class Awards extends React.Component {
                         })}
                     </div>
                 </>
-            )
-        } else if (this.movies && this.movies.length > 1) {
-            console.log("condition met")
-            return (
-                <div id="awardsText">
-                    there are 5 movies
-                </div >
             )
         } else {
             return (

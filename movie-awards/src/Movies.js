@@ -19,7 +19,7 @@ export default class Movies extends React.Component {
     render() {
         if (this.props.movies) {
             return (
-                <Movie movies={this.props.movies} GetMovies={this.props.GetMovies} />
+                <Movie movies={this.props.movies} selectMovie={this.props.selectMovie} />
             );
         }
 
@@ -35,9 +35,7 @@ export default class Movies extends React.Component {
                 </div>
             )
         }
+        return <div>Couldn't get movies</div>;
 
-        if (!this.props.movies) {
-            return <div>Couldn't get movies</div>;
-        }
     }
 }

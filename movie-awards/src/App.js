@@ -21,7 +21,7 @@ export default class App extends React.Component {
     this.LOCAL_STORAGE_KEY = 'awardsApp.movies'
 
     this.handleSearch = this.handleSearch.bind(this)
-    this.GetMovies = this.GetMovies.bind(this)
+    this.selectMovie = this.selectMovie.bind(this)
     this.FetchMovies = this.FetchMovies.bind(this)
     this.deleteMovie = this.deleteMovie.bind(this)
   }
@@ -51,24 +51,33 @@ export default class App extends React.Component {
     e.preventDefault();
   };
 
-  GetMovies(Value) {
-    console.log(Value)
-    this.setState({ MovieArray: Value }, function () {
-      this.state.MyMovies = JSON.parse(localStorage.getItem(this.LOCAL_STORAGE_KEY) || "[]")
-      // console.log(this.MovieArray)
-      this.state.MyMovies.push(this.state.MovieArray);
-      localStorage.setItem(this.LOCAL_STORAGE_KEY, JSON.stringify(this.state.MyMovies));
-    })
-    this.forceUpdate();
+  // GetMovies(Value) {
+  //   console.log(Value)
+  //   this.setState({ MovieArray: Value }, function () {
+  //     this.state.MyMovies = JSON.parse(localStorage.getItem(this.LOCAL_STORAGE_KEY) || "[]")
+  //     // console.log(this.MovieArray)
+  //     this.state.MyMovies.push(this.state.MovieArray);
+  //     localStorage.setItem(this.LOCAL_STORAGE_KEY, JSON.stringify(this.state.MyMovies));
+  //   })
+  // }
+
+  selectMovie(movie) {
+    const movies = [...this.state.MovieArray, movie]
+    this.setState({ MovieArray: movies })
+    localStorage.setItem(this.LOCAL_STORAGE_KEY, JSON.stringify(movies));
   }
 
   deleteMovie(movie) {
     const items = JSON.parse(localStorage.getItem(this.LOCAL_STORAGE_KEY));
     this.filtered = items.filter(item => item.imdbID !== movie.imdbID);
     localStorage.setItem(this.LOCAL_STORAGE_KEY, JSON.stringify(this.filtered));
+    this.setState({ filtered: items })
+
   }
 
   render() {
+    console.log(this.MovieArray)
+    console.log(this.filtered)
     return (
       <div>
         <header>
@@ -80,10 +89,10 @@ export default class App extends React.Component {
         </header>
         <main>
           <div>
-            <Movies name={this.state.name} movies={this.state.movies} GetMovies={this.GetMovies} />
+            <Movies name={this.state.name} movies={this.state.movies} selectMovie={this.selectMovie} />
           </div>
           <div id="awards" >
-            <Awards deleteMovie={this.deleteMovie} filtered={this.filtered} movies={this.state.MyMovies} />
+            <Awards deleteMovie={this.deleteMovie} filtered={this.filtered} movies={this.state.MovieArray} />
           </div>
         </main>
       </div >

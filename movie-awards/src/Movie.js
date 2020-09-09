@@ -6,6 +6,7 @@ class Movie extends React.Component {
         super(props);
         this.LOCAL_STORAGE_KEY = 'awardsApp.movies'
         this.state = { localStorageMovies: localStorage.getItem('awardsApp.movies') };
+        console.log(this.props)
     }
 
     getmovies() {
@@ -46,7 +47,7 @@ class Movie extends React.Component {
                                     <p>{movie.Title}</p>
                                     <p>year {movie.Year}</p>
                                 </div>
-                                <div className="nominateButton" onClick={() => this.props.GetMovies(movie)}> NOMINATE </div>
+                                <div className="nominateButton" onClick={() => this.props.selectMovie(movie)}> NOMINATE </div>
                             </div>
                         )
                     })}
