@@ -27,29 +27,14 @@ header input {
   background-color: #348100;
   border: none;
   font-size: 2.9vh;
-  /* -webkit-box-shadow: 0 0 10px #000;
-  box-shadow: 0 0 20px #000; */
 }
 
 #inputWrapper {
   text-align: center;
 }
 
-#movieList {
-  height: 369px;
-  margin: 20px 0;
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-}
-
 #awards {
-  border: #000 1px solid;
+  border-top: #000 3px solid;
   height: 170px;
   margin: 20px 0;
-}
-
-footer {
-  height: 88px;
-  border: blue 1px solid;
 }

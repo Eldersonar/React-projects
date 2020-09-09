@@ -1,3 +1,11 @@
+#movieList {
+    height: 369px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
 .movieHolder img {
     max-height: 200px;
     max-width: 100%;
@@ -10,12 +18,11 @@
     border-bottom: #000 2px solid;
 }
 
-.movieHolder button {
+.nominateButton {
     padding: 8px;
-    width: 63%;
     color: #fff;
     background-color: #348100;
-    border: none;
+    border-bottom: #000 2px solid;
     font-size: 0.9em;
 }
 
