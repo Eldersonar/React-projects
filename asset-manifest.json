@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/React-projects/movie-awards/static/css/main.b9531f16.chunk.css",
-    "main.js": "/React-projects/movie-awards/static/js/main.2e8a0ba4.chunk.js",
-    "main.js.map": "/React-projects/movie-awards/static/js/main.2e8a0ba4.chunk.js.map",
-    "runtime-main.js": "/React-projects/movie-awards/static/js/runtime-main.7988d119.js",
-    "runtime-main.js.map": "/React-projects/movie-awards/static/js/runtime-main.7988d119.js.map",
-    "static/js/2.60b91299.chunk.js": "/React-projects/movie-awards/static/js/2.60b91299.chunk.js",
-    "static/js/2.60b91299.chunk.js.map": "/React-projects/movie-awards/static/js/2.60b91299.chunk.js.map",
-    "index.html": "/React-projects/movie-awards/index.html",
-    "precache-manifest.fbc5bd1748b598c4a14a7dc16b6c48d5.js": "/React-projects/movie-awards/precache-manifest.fbc5bd1748b598c4a14a7dc16b6c48d5.js",
-    "service-worker.js": "/React-projects/movie-awards/service-worker.js",
-    "static/css/main.b9531f16.chunk.css.map": "/React-projects/movie-awards/static/css/main.b9531f16.chunk.css.map",
-    "static/js/2.60b91299.chunk.js.LICENSE.txt": "/React-projects/movie-awards/static/js/2.60b91299.chunk.js.LICENSE.txt"
+    "main.css": "/movie-awards/static/css/main.b9531f16.chunk.css",
+    "main.js": "/movie-awards/static/js/main.2e8a0ba4.chunk.js",
+    "main.js.map": "/movie-awards/static/js/main.2e8a0ba4.chunk.js.map",
+    "runtime-main.js": "/movie-awards/static/js/runtime-main.57fafd34.js",
+    "runtime-main.js.map": "/movie-awards/static/js/runtime-main.57fafd34.js.map",
+    "static/js/2.60b91299.chunk.js": "/movie-awards/static/js/2.60b91299.chunk.js",
+    "static/js/2.60b91299.chunk.js.map": "/movie-awards/static/js/2.60b91299.chunk.js.map",
+    "index.html": "/movie-awards/index.html",
+    "precache-manifest.5f9da06a00835362cf08383b0ccdc441.js": "/movie-awards/precache-manifest.5f9da06a00835362cf08383b0ccdc441.js",
+    "service-worker.js": "/movie-awards/service-worker.js",
+    "static/css/main.b9531f16.chunk.css.map": "/movie-awards/static/css/main.b9531f16.chunk.css.map",
+    "static/js/2.60b91299.chunk.js.LICENSE.txt": "/movie-awards/static/js/2.60b91299.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7988d119.js",
+    "static/js/runtime-main.57fafd34.js",
     "static/js/2.60b91299.chunk.js",
     "static/css/main.b9531f16.chunk.css",
     "static/js/main.2e8a0ba4.chunk.js"
